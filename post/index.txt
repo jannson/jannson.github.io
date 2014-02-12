@@ -1,16 +1,41 @@
 ## 余争的博客
 
-### 介绍
-* 该博客使用纯静态页面，可部署在Github Pages上，还能绑定域名哦，亲。
-* 类似jekyll，但不需要安装ruby神马的，更简单有木有，更方便有木有。
-* 博客使用Markdown格式编写，Markdown控有福啦！
-* 整个程序只有3个文件，100多行js代码，你想怎么扩展就怎么扩展。
+### 说两句
+* 来了深圳就是深圳人有木有？ 若在深圳南山附近，欢迎参加每周二晚的[爬南山活动](http://www.douban.com/event/20803091)
+* 对嵌入式有兴趣？或对数据处理有兴趣？——快加QQ群:2749_83126
 
-### 部署
-* 详见[Github Pages](http://pages.github.com/)说明
+### 一些项目
+* c/c++
 
-### 使用
-* 在meta.js里修改你的博客名称，版权信息，博客分类，帖子列表等信息（该文件要完全符合json格式哦）。
-* 用Markdown写好博客，命名为yyyy-MM-dd-blog_name.txt，保存在post目录里。
-* git add ,git commit, git push
+  * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
+  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。
+  * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
+  freescale的p1010板子在vxworks6.6上的BSP
+  * [simhash-cpp](https://github.com/jannson/simhash-cpp)
+  海量数据排重与相似计算（fork别人的项目）
 
+* python
+  
+  * [yaha分词库](https://github.com/jannson/yaha)
+  一个简单的分词库，方便用户理解代码，并对各功能进行定制。
+  * [crfseg](https://github.com/jannson/crfseg)
+  一个基于crf++，条件随机场的分词工具。分词准确，并且可以得到词性信息。但也更慢些。
+  * [omind](https://github.com/jannson/omind)
+  很久前痴迷于思维导图的时候，实现的一个在线思维版本
+  * [haysearch](https://github.com/jannson/haysearch)
+  一个基于whoosh实现的电影搜索站，通过它可以了解与测试一些索引工具的原理
+  * [towi CMS站](https://github.com/jannson/towi)
+  基于mezzanine并可以在sinaapp云上运行的一个CMS站
+  * [simhash-py]
+  海量数据排重，在大量网页抓取中用处会很大。
+  * [scrapy-board](https://github.com/jannson/scrapy-board)
+  基于scrapy的网页爬虫，通过redis来完成分布式的列队。
+
+
+### 欢迎交流
+* 专注嵌入式开发，目前搞工业交换机，做底层开发以及协议开发
+* 兴趣于搜索，文本处理，用户推荐等方面。有好项目欢迎叫上我:)
+* [博客在oschina](http://my.oschina.net/dancing/blog)
+* 突围俱乐部 在深圳与朋友进行读书、分享、户外等的线下交流活动。你再宅就out的了，快参加活动！
+* 微信？
+* 微博？
