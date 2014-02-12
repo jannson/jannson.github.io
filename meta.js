@@ -1,9 +1,9 @@
 {
-    "site_name": "小天天博客",
-    "copyright": "wawasoft 2012",
+    "site_name": "余争的博客",
+    "copyright": "jannson",
     "cates": [
         {"name": "tech", "text":"技术"},
-        {"name": "art", "text":"艺术"},
+        {"name": "life", "text":"生活"},
         {"name": "other", "text":"其它"}
     ],
     "articles":[
