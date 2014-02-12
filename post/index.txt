@@ -8,7 +8,7 @@
 * c/c++
 
   * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
-  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。
+  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～
   * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
   freescale的p1010板子在vxworks6.6上的BSP
   * [simhash-cpp](https://github.com/jannson/simhash-cpp)
