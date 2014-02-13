@@ -25,7 +25,7 @@
   * [haysearch](https://github.com/jannson/haysearch)
   一个基于whoosh实现的电影搜索站，通过它可以了解与测试一些索引工具的原理
   * [towi CMS站](https://github.com/jannson/towi)
-  基于mezzanine并可以在sinaapp云上运行的一个CMS站
+  基于mezzanine并可以在sinaapp云上运行的一个CMS站。[测试地址](http://towi.sinaapp.com)
   * [simhash-py](https://github.com/jannson/simhash-py)
   海量数据排重，在大量网页抓取中用处会很大。
   * [scrapy-board](https://github.com/jannson/scrapy-board)
