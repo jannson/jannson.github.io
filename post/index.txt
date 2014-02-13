@@ -17,11 +17,11 @@
 * python
   
   * [yaha分词库](https://github.com/jannson/yaha)
-  一个简单的分词库，方便用户理解代码，并对各功能进行定制。
+  一个简单的分词库，方便用户理解代码，并对各功能进行定制。[测试地址](http://yaha.sinaapp.com/)
   * [crfseg](https://github.com/jannson/crfseg)
   一个基于crf++，条件随机场的分词工具。分词准确，并且可以得到词性信息。但也更慢些。
   * [omind](https://github.com/jannson/omind)
-  很久前痴迷于思维导图的时候，实现的一个在线思维版本
+  很久前痴迷于思维导图的时候，实现的一个在线思维版本。[测试地址](http://omind.sinaapp.com)
   * [haysearch](https://github.com/jannson/haysearch)
   一个基于whoosh实现的电影搜索站，通过它可以了解与测试一些索引工具的原理
   * [towi CMS站](https://github.com/jannson/towi)
