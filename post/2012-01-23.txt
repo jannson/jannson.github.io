@@ -1,4 +1,0 @@
-## other hello world
-1. aaaaaaaa
-1. bbbbbbbb
-1. ccccccccc
