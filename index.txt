@@ -11,6 +11,8 @@
   一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～
   * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
   freescale的p1010板子在vxworks6.6上的BSP
+  * [wordmaker 词语生成工具](https://github.com/jannson/wordmaker)
+  能够从大文本当中训练得到当中的词语，而不需要其它任何的人工标注。基于c++，使用类似Map/Reduce的思想来处理大文本。
   * [simhash-cpp](https://github.com/jannson/simhash-cpp)
   海量数据排重与相似计算（fork别人的项目）
 
