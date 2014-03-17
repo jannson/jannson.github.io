@@ -8,7 +8,7 @@
 * c/c++
 
   * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
-  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～
+  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～[在线测试](http://jannson.github.io/vxworks)
   * [vxworks on jsmips](http://jannson.github.io/vxworks)
   Fork并修改了可以在浏览器中运行的mips虚拟机-[jsmips](https://github.com/jannson/jsmips), 以让vxworks-like-kernel可以在浏览器中运行！
   * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
