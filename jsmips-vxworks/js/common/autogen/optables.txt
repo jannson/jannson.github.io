@@ -1,0 +1,75 @@
+First
+28,26
+31,29
+Special RegImm J JAL BEQ BNE BLEZ BGTZ
+ADDI ADDIU SLTI SLTIU ANDI ORI XORI LUI
+COP0 b b b BEQL BNEL BLEZL BGTZL
+a a a a Special2 a a a
+LB LH LWL LW LBU LHU LWR a
+SB SH SWL SW a a SWR CACHE
+LL b b PREF a b b a
+SC b b a a b b a
+
+----
+
+Special
+2,0
+5,3
+SLL b SRL SRA SLLV a SRLV SRAV
+JR JALR MOVZ MOVN SYSCALL BREAK a SYNC
+MFHI MTHI MFLO MTLO a a a a
+MULT MULTU DIV DIVU a a a a
+ADD ADDU SUB SUBU AND OR XOR NOR
+a a SLT SLTU a a a a
+TGE TGEU TLT TLTU TEQ a TNE a
+a a a a a a a a
+
+----
+
+Special2
+2,0
+5,3
+MADD MADDU MUL a MSUB MSUBU a a
+a a a a a a a a
+a a a a a a a a
+a a a a a a a a
+CLZ CLO a a a a a a
+a a a a a a a a
+a a a a a a a a
+a a a a a a a SDBBP
+
+----
+
+RegImm
+18,16
+20,19
+BLTZ BGEZ BLTZL BGEZL a a a a
+TGEI TGEIU TLTI TLTIU TEQI a TNEI a
+BLTZAL BGEZAL BLTZALL BGEZALL a a a a
+a a a a a a a a
+
+----
+
+COP0
+23,21
+25,24
+MFC0 a a a MTC0 a a a
+a a a a a a a a
+CO CO CO CO CO CO CO CO
+CO CO CO CO CO CO CO CO
+
+----
+
+CO
+2,0
+5,3
+a TLBR TLBWI a a a TLBWR a
+TLBP a a a a a a a
+a a a a a a a a
+ERET a a a a a a DERET
+WAIT a a a a a a a
+a a a a a a a a
+a a a a a a a a
+a a a a a a a a
+
+
