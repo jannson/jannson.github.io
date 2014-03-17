@@ -9,6 +9,8 @@
 
   * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
   一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～
+  * [vxworks on jsmips](http://jannson.github.io/vxworks)
+  Fork并修改了可以在浏览器中运行的mips虚拟机-[jsmips](https://github.com/jannson/jsmips), 以让vxworks-like-kernel可以在浏览器中运行！
   * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
   freescale的p1010板子在vxworks6.6上的BSP
   * [wordmaker 词语生成工具](https://github.com/jannson/wordmaker)
@@ -33,6 +35,11 @@
   * [scrapy-board](https://github.com/jannson/scrapy-board)
   基于scrapy的网页爬虫，通过redis来完成分布式的列队。
   * 还有，略过...
+
+* javascript
+
+  * jsmips
+  一个可以在浏览器中运行的mips虚拟机。为了能让vxworks-like-kernel在它上面运行，修改了UART_16550以及一点指令与中断相关的代码。[Fork别人的项目](https://github.com/isuru-c-p/jsmips)
 
 ### 期望
 * 期望能完成一个好产品
