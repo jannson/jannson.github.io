@@ -2,31 +2,26 @@
 <html lang="zh-cn">
     <head>
         <meta charset="utf-8">
-        <title>余争博客</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="余争 数据处理 嵌入式 操作系统 vxworks eCos">
         <meta name="author" content="余争">
-
-        <!-- Le styles -->
-        <link href="http://lib.sinaapp.com/js/bootstrap/2.0.2/css/bootstrap.min.css" rel="stylesheet">
-        <style type="text/css">
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-            .sidebar-nav {
-                padding: 9px 0;
-            }
-        </style>
-        <link href="http://lib.sinaapp.com/js/bootstrap/2.0.2/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="skin.css" rel="stylesheet">
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        <!-- Le fav and touch icons -->
+		<link rel="stylesheet" href="./typo.css"/>
         <link rel="shortcut icon" href="static/favicon.ico">
+        <title>余争博客</title>
+		<style>
+		   a{color:#1abc9c;}
+		   body h1{font:38px/1.8em Hiragino Mincho ProN, STSong, serif!important;color:#2c3e50;}
+		   code{color:#080;}
+		   html{font-size:110%;}
+		   .main-body{min-width:480px;padding:1% 8%;}
+			ul, ol {
+				margin: 0px 0px 0px 12px;
+				list-style: none outside none;
+			}
+			li {
+				margin: 0px 0px 0px 12px;
+			}
+		</style>
     </head>
     <body>
         <div class="main-body">

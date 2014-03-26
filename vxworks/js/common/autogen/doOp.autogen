@@ -1,0 +1,6614 @@
+
+	function doOp(op) {
+		
+
+/* 0b11111100000000000000000000000000 */
+switch((op & 0xfc000000) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.SLL(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.b(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.SRL(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.SRA(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.SLLV(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.SRLV(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.SRAV(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.JR(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.JALR(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.MOVZ(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.MOVN(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.SYSCALL(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.BREAK(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.SYNC(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.MFHI(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.MTHI(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.MFLO(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.MTLO(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.MULT(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.MULTU(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.DIV(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.DIVU(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.ADD(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.ADDU(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.SUB(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.SUBU(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.AND(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.OR(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.XOR(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.NOR(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.SLT(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.SLTU(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.TGE(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.TGEU(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.TLT(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.TLTU(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.TEQ(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.TNE(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x4000000: /*0b100000000000000000000000000*/
+						
+
+/* 0b111110000000000000000 */
+switch((op & 0x1f0000) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.BLTZ(op);
+						return;
+						
+				
+					case 0x10000: /*0b10000000000000000*/
+						this.BGEZ(op);
+						return;
+						
+				
+					case 0x20000: /*0b100000000000000000*/
+						this.BLTZL(op);
+						return;
+						
+				
+					case 0x30000: /*0b110000000000000000*/
+						this.BGEZL(op);
+						return;
+						
+				
+					case 0x40000: /*0b1000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x50000: /*0b1010000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x60000: /*0b1100000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x70000: /*0b1110000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x80000: /*0b10000000000000000000*/
+						this.TGEI(op);
+						return;
+						
+				
+					case 0x90000: /*0b10010000000000000000*/
+						this.TGEIU(op);
+						return;
+						
+				
+					case 0xa0000: /*0b10100000000000000000*/
+						this.TLTI(op);
+						return;
+						
+				
+					case 0xb0000: /*0b10110000000000000000*/
+						this.TLTIU(op);
+						return;
+						
+				
+					case 0xc0000: /*0b11000000000000000000*/
+						this.TEQI(op);
+						return;
+						
+				
+					case 0xd0000: /*0b11010000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe0000: /*0b11100000000000000000*/
+						this.TNEI(op);
+						return;
+						
+				
+					case 0xf0000: /*0b11110000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x100000: /*0b100000000000000000000*/
+						this.BLTZAL(op);
+						return;
+						
+				
+					case 0x110000: /*0b100010000000000000000*/
+						this.BGEZAL(op);
+						return;
+						
+				
+					case 0x120000: /*0b100100000000000000000*/
+						this.BLTZALL(op);
+						return;
+						
+				
+					case 0x130000: /*0b100110000000000000000*/
+						this.BGEZALL(op);
+						return;
+						
+				
+					case 0x140000: /*0b101000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x150000: /*0b101010000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x160000: /*0b101100000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x170000: /*0b101110000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x180000: /*0b110000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x190000: /*0b110010000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a0000: /*0b110100000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b0000: /*0b110110000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c0000: /*0b111000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d0000: /*0b111010000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e0000: /*0b111100000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f0000: /*0b111110000000000000000*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x8000000: /*0b1000000000000000000000000000*/
+						this.J(op);
+						return;
+						
+				
+					case 0xc000000: /*0b1100000000000000000000000000*/
+						this.JAL(op);
+						return;
+						
+				
+					case 0x10000000: /*0b10000000000000000000000000000*/
+						this.BEQ(op);
+						return;
+						
+				
+					case 0x14000000: /*0b10100000000000000000000000000*/
+						this.BNE(op);
+						return;
+						
+				
+					case 0x18000000: /*0b11000000000000000000000000000*/
+						this.BLEZ(op);
+						return;
+						
+				
+					case 0x1c000000: /*0b11100000000000000000000000000*/
+						this.BGTZ(op);
+						return;
+						
+				
+					case 0x20000000: /*0b100000000000000000000000000000*/
+						this.ADDI(op);
+						return;
+						
+				
+					case 0x24000000: /*0b100100000000000000000000000000*/
+						this.ADDIU(op);
+						return;
+						
+				
+					case 0x28000000: /*0b101000000000000000000000000000*/
+						this.SLTI(op);
+						return;
+						
+				
+					case 0x2c000000: /*0b101100000000000000000000000000*/
+						this.SLTIU(op);
+						return;
+						
+				
+					case 0x30000000: /*0b110000000000000000000000000000*/
+						this.ANDI(op);
+						return;
+						
+				
+					case 0x34000000: /*0b110100000000000000000000000000*/
+						this.ORI(op);
+						return;
+						
+				
+					case 0x38000000: /*0b111000000000000000000000000000*/
+						this.XORI(op);
+						return;
+						
+				
+					case 0x3c000000: /*0b111100000000000000000000000000*/
+						this.LUI(op);
+						return;
+						
+				
+					case 0x40000000: /*0b1000000000000000000000000000000*/
+						
+
+/* 0b11111000000000000000000000 */
+switch((op & 0x3e00000) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.MFC0(op);
+						return;
+						
+				
+					case 0x200000: /*0b1000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x400000: /*0b10000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x600000: /*0b11000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x800000: /*0b100000000000000000000000*/
+						this.MTC0(op);
+						return;
+						
+				
+					case 0xa00000: /*0b101000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc00000: /*0b110000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe00000: /*0b111000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1000000: /*0b1000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1200000: /*0b1001000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1400000: /*0b1010000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1600000: /*0b1011000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1800000: /*0b1100000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a00000: /*0b1101000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c00000: /*0b1110000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e00000: /*0b1111000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2000000: /*0b10000000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2200000: /*0b10001000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2400000: /*0b10010000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2600000: /*0b10011000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2800000: /*0b10100000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2a00000: /*0b10101000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2c00000: /*0b10110000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x2e00000: /*0b10111000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3000000: /*0b11000000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3200000: /*0b11001000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3400000: /*0b11010000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3600000: /*0b11011000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3800000: /*0b11100000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3a00000: /*0b11101000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3c00000: /*0b11110000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x3e00000: /*0b11111000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.TLBR(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.TLBWI(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.TLBWR(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.TLBP(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.ERET(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.DERET(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.WAIT(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x44000000: /*0b1000100000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0x48000000: /*0b1001000000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0x4c000000: /*0b1001100000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0x50000000: /*0b1010000000000000000000000000000*/
+						this.BEQL(op);
+						return;
+						
+				
+					case 0x54000000: /*0b1010100000000000000000000000000*/
+						this.BNEL(op);
+						return;
+						
+				
+					case 0x58000000: /*0b1011000000000000000000000000000*/
+						this.BLEZL(op);
+						return;
+						
+				
+					case 0x5c000000: /*0b1011100000000000000000000000000*/
+						this.BGTZL(op);
+						return;
+						
+				
+					case 0x60000000: /*0b1100000000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x64000000: /*0b1100100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x68000000: /*0b1101000000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x6c000000: /*0b1101100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x70000000: /*0b1110000000000000000000000000000*/
+						
+
+/* 0b111111 */
+switch((op & 0x3f) >>> 0)
+{
+	
+					case 0x0: /*0b0*/
+						this.MADD(op);
+						return;
+						
+				
+					case 0x1: /*0b1*/
+						this.MADDU(op);
+						return;
+						
+				
+					case 0x2: /*0b10*/
+						this.MUL(op);
+						return;
+						
+				
+					case 0x3: /*0b11*/
+						this.a(op);
+						return;
+						
+				
+					case 0x4: /*0b100*/
+						this.MSUB(op);
+						return;
+						
+				
+					case 0x5: /*0b101*/
+						this.MSUBU(op);
+						return;
+						
+				
+					case 0x6: /*0b110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x7: /*0b111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x8: /*0b1000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x9: /*0b1001*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa: /*0b1010*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb: /*0b1011*/
+						this.a(op);
+						return;
+						
+				
+					case 0xc: /*0b1100*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd: /*0b1101*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe: /*0b1110*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf: /*0b1111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x10: /*0b10000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x11: /*0b10001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x12: /*0b10010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x13: /*0b10011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x14: /*0b10100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x15: /*0b10101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x16: /*0b10110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x17: /*0b10111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x18: /*0b11000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x19: /*0b11001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1a: /*0b11010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1b: /*0b11011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1c: /*0b11100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1d: /*0b11101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1e: /*0b11110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x1f: /*0b11111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x20: /*0b100000*/
+						this.CLZ(op);
+						return;
+						
+				
+					case 0x21: /*0b100001*/
+						this.CLO(op);
+						return;
+						
+				
+					case 0x22: /*0b100010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x23: /*0b100011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x24: /*0b100100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x25: /*0b100101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x26: /*0b100110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x27: /*0b100111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x28: /*0b101000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x29: /*0b101001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2a: /*0b101010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2b: /*0b101011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2c: /*0b101100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2d: /*0b101101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2e: /*0b101110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x2f: /*0b101111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x30: /*0b110000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x31: /*0b110001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x32: /*0b110010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x33: /*0b110011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x34: /*0b110100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x35: /*0b110101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x36: /*0b110110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x37: /*0b110111*/
+						this.a(op);
+						return;
+						
+				
+					case 0x38: /*0b111000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x39: /*0b111001*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3a: /*0b111010*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3b: /*0b111011*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3c: /*0b111100*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3d: /*0b111101*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3e: /*0b111110*/
+						this.a(op);
+						return;
+						
+				
+					case 0x3f: /*0b111111*/
+						this.SDBBP(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+;
+						return;
+						
+				
+					case 0x74000000: /*0b1110100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x78000000: /*0b1111000000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x7c000000: /*0b1111100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0x80000000: /*0b10000000000000000000000000000000*/
+						this.LB(op);
+						return;
+						
+				
+					case 0x84000000: /*0b10000100000000000000000000000000*/
+						this.LH(op);
+						return;
+						
+				
+					case 0x88000000: /*0b10001000000000000000000000000000*/
+						this.LWL(op);
+						return;
+						
+				
+					case 0x8c000000: /*0b10001100000000000000000000000000*/
+						this.LW(op);
+						return;
+						
+				
+					case 0x90000000: /*0b10010000000000000000000000000000*/
+						this.LBU(op);
+						return;
+						
+				
+					case 0x94000000: /*0b10010100000000000000000000000000*/
+						this.LHU(op);
+						return;
+						
+				
+					case 0x98000000: /*0b10011000000000000000000000000000*/
+						this.LWR(op);
+						return;
+						
+				
+					case 0x9c000000: /*0b10011100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xa0000000: /*0b10100000000000000000000000000000*/
+						this.SB(op);
+						return;
+						
+				
+					case 0xa4000000: /*0b10100100000000000000000000000000*/
+						this.SH(op);
+						return;
+						
+				
+					case 0xa8000000: /*0b10101000000000000000000000000000*/
+						this.SWL(op);
+						return;
+						
+				
+					case 0xac000000: /*0b10101100000000000000000000000000*/
+						this.SW(op);
+						return;
+						
+				
+					case 0xb0000000: /*0b10110000000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb4000000: /*0b10110100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xb8000000: /*0b10111000000000000000000000000000*/
+						this.SWR(op);
+						return;
+						
+				
+					case 0xbc000000: /*0b10111100000000000000000000000000*/
+						this.CACHE(op);
+						return;
+						
+				
+					case 0xc0000000: /*0b11000000000000000000000000000000*/
+						this.LL(op);
+						return;
+						
+				
+					case 0xc4000000: /*0b11000100000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xc8000000: /*0b11001000000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xcc000000: /*0b11001100000000000000000000000000*/
+						this.PREF(op);
+						return;
+						
+				
+					case 0xd0000000: /*0b11010000000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xd4000000: /*0b11010100000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xd8000000: /*0b11011000000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xdc000000: /*0b11011100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xe0000000: /*0b11100000000000000000000000000000*/
+						this.SC(op);
+						return;
+						
+				
+					case 0xe4000000: /*0b11100100000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xe8000000: /*0b11101000000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xec000000: /*0b11101100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf0000000: /*0b11110000000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+					case 0xf4000000: /*0b11110100000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xf8000000: /*0b11111000000000000000000000000000*/
+						this.b(op);
+						return;
+						
+				
+					case 0xfc000000: /*0b11111100000000000000000000000000*/
+						this.a(op);
+						return;
+						
+				
+	default:
+	    throw("Unreachable from opcode: " + op );
+}
+
+
+	}

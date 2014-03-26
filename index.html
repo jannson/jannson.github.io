@@ -2,51 +2,48 @@
 <html lang="zh-cn">
     <head>
         <meta charset="utf-8">
-        <title>余争博客</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="余争 数据处理 嵌入式 操作系统 vxworks eCos">
         <meta name="author" content="余争">
-
-        <!-- Le styles -->
-        <link href="http://lib.sinaapp.com/js/bootstrap/2.0.2/css/bootstrap.min.css" rel="stylesheet">
-        <style type="text/css">
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-            .sidebar-nav {
-                padding: 9px 0;
-            }
-        </style>
-        <link href="http://lib.sinaapp.com/js/bootstrap/2.0.2/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="skin.css" rel="stylesheet">
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        <!-- Le fav and touch icons -->
+		<link rel="stylesheet" href="./typo.css"/>
         <link rel="shortcut icon" href="static/favicon.ico">
+        <title>余争博客</title>
+		<style>
+		   a{color:#1abc9c;}
+		   body h1{font:38px/1.8em Hiragino Mincho ProN, STSong, serif!important;color:#2c3e50;}
+		   code{color:#080;}
+		   html{font-size:110%;}
+		   .main-body{min-width:480px;padding:1% 8%;}
+			ul, ol {
+				margin: 0px 0px 0px 12px;
+				list-style: none outside none;
+			}
+			li {
+				margin: 0px 0px 0px 12px;
+			}
+		</style>
     </head>
     <body>
         <div class="main-body">
-<h2>余争的博客</h2>
+<h1>余争的博客</h1>
 
-<h3>说两句</h3>
+<h2>说两句</h2>
 
 <ul>
 <li>来了深圳就是深圳人有木有？ 若在深圳南山附近，欢迎参加每周二晚的<a href="http://www.douban.com/event/20803091">爬南山活动</a></li>
 <li>对嵌入式有兴趣？或对数据处理有兴趣？——快加QQ群:2749_83126</li>
 </ul>
 
-<h3>一些项目</h3>
+<h2>一些项目</h2>
 
 <ul>
 <li><p>c/c++</p>
 
 <ul>
 <li><a href="https://github.com/jannson/vxworks-like-kernel">vxworks-like-kernel</a>
-一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～</li>
+一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～<a href="http://jannson.github.io/vxworks">在线测试</a></li>
+<li><a href="http://jannson.github.io/vxworks">vxworks on jsmips</a>
+Fork并修改了可以在浏览器中运行的mips虚拟机-<a href="https://github.com/jannson/jsmips">jsmips</a>, 以让vxworks-like-kernel可以在浏览器中运行！</li>
 <li><a href="https://github.com/jannson/p1010_vxworks">p1010_vxworks</a>
 freescale的p1010板子在vxworks6.6上的BSP</li>
 <li><a href="https://github.com/jannson/wordmaker">wordmaker 词语生成工具</a>
@@ -73,9 +70,15 @@ freescale的p1010板子在vxworks6.6上的BSP</li>
 基于scrapy的网页爬虫，通过redis来完成分布式的列队。</li>
 <li>还有，略过...</li>
 </ul></li>
+<li><p>javascript</p>
+
+<ul>
+<li>jsmips
+一个可以在浏览器中运行的mips虚拟机。为了能让vxworks-like-kernel在它上面运行，修改了UART_16550以及一点指令与中断相关的代码。<a href="https://github.com/isuru-c-p/jsmips">Fork别人的项目</a></li>
+</ul></li>
 </ul>
 
-<h3>期望</h3>
+<h2>期望</h2>
 
 <ul>
 <li>期望能完成一个好产品</li>
@@ -83,7 +86,7 @@ freescale的p1010板子在vxworks6.6上的BSP</li>
 <li>希望成为你的朋友，在人生路上多一个倚靠 (TODO:如何更煽情一些？)</li>
 </ul>
 
-<h3>欢迎交流</h3>
+<h2>欢迎交流</h2>
 
 <ul>
 <li>专注嵌入式开发，目前搞工业交换机，做底层开发以及协议开发</li>

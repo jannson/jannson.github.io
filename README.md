@@ -1,14 +1,16 @@
-## 余争的博客
+# 余争的博客
 
-### 说两句
+## 说两句
 * 来了深圳就是深圳人有木有？ 若在深圳南山附近，欢迎参加每周二晚的[爬南山活动](http://www.douban.com/event/20803091)
 * 对嵌入式有兴趣？或对数据处理有兴趣？——快加QQ群:2749_83126
 
-### 一些项目
+## 一些项目
 * c/c++
 
   * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
-  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～
+  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～[在线测试](http://jannson.github.io/vxworks)
+  * [vxworks on jsmips](http://jannson.github.io/vxworks)
+  Fork并修改了可以在浏览器中运行的mips虚拟机-[jsmips](https://github.com/jannson/jsmips), 以让vxworks-like-kernel可以在浏览器中运行！
   * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
   freescale的p1010板子在vxworks6.6上的BSP
   * [wordmaker 词语生成工具](https://github.com/jannson/wordmaker)
@@ -34,12 +36,17 @@
   基于scrapy的网页爬虫，通过redis来完成分布式的列队。
   * 还有，略过...
 
-### 期望
+* javascript
+
+  * jsmips
+  一个可以在浏览器中运行的mips虚拟机。为了能让vxworks-like-kernel在它上面运行，修改了UART_16550以及一点指令与中断相关的代码。[Fork别人的项目](https://github.com/isuru-c-p/jsmips)
+
+## 期望
 * 期望能完成一个好产品
 * 或者认识一批有激情的朋友
 * 希望成为你的朋友，在人生路上多一个倚靠 (TODO:如何更煽情一些？)
 
-### 欢迎交流
+## 欢迎交流
 * 专注嵌入式开发，目前搞工业交换机，做底层开发以及协议开发
 * 兴趣于搜索，文本处理，用户推荐等方面。有好项目欢迎叫上我:)
 * [博客在oschina](http://my.oschina.net/dancing/blog)
