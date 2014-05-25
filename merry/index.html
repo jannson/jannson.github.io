@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<title>嫁给我</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="description" content="This shows various examples of how to use the Marquee jQuery plugin." />
+
+	<!---// load jQuery from the GoogleAPIs CDN //--->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.marquee.js"></script>
+
+	<link type="text/css" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" media="all" />
+	<link type="text/css" href="./css/docs.css" rel="stylesheet" media="all" />
+	<link type="text/css" href="./css/margin.css" rel="stylesheet" title="default" media="all" />
+	
+	<style type="text/css">
+		h4, h5 {
+			margin-bottom: 0;
+		}
+		
+		.examples pre {
+			margin-top: 0;
+		}
+		
+		.marquee .author {
+			display: none;
+		}
+		
+		.marquee-author {
+			float: left; 
+			width: 90px; 
+			text-align: right; 
+			padding: 4px 5px 1px 0;
+		}
+	</style>
+
+	<script type="text/javascript">
+	<!--//
+	var use_debug = false;
+
+	function debug(){
+		if( use_debug && window.console && window.console.log ) console.log(arguments);
+	}
+
+	// on DOM ready
+	$(document).ready(function (){
+		$(".marquee").marquee({
+			loop: -1
+			// this callback runs when the marquee is initialized
+			, init: function ($marquee, options){
+				debug("init", arguments);
+
+				// shows how we can change the options at runtime
+				if( $marquee.is("#marquee2") ) options.yScroll = "bottom";
+			}
+			// this callback runs before a marquee is shown
+			, beforeshow: function ($marquee, $li){
+				debug("beforeshow", arguments);
+
+				// check to see if we have an author in the message (used in #marquee6)
+				var $author = $li.find(".author");
+				// move author from the item marquee-author layer and then fade it in
+				if( $author.length ){
+					$("#marquee-author").html("<span style='display:none;'>" + $author.html() + "</span>").find("> span").fadeIn(850);
+				}
+			}
+			// this callback runs when a has fully scrolled into view (from either top or bottom)
+			, show: function (){
+				debug("show", arguments);
+			}
+			// this callback runs when a after message has being shown
+			, aftershow: function ($marquee, $li){
+				debug("aftershow", arguments);
+
+				// find the author
+				var $author = $li.find(".author");
+				// hide the author
+				if( $author.length ) $("#marquee-author").find("> span").fadeOut(250);
+			}
+		});
+	});
+	
+	var iNewMessageCount = 0;
+	
+	function addMessage(selector){
+		// increase counter
+		iNewMessageCount++;
+
+		// append a new message to the marquee scrolling list
+		var $ul = $(selector).append("<li>New message #" + iNewMessageCount + "</li>");
+		// update the marquee
+		$ul.marquee("update");
+	}
+	
+	function pause(selector){
+		$(selector).marquee('pause');
+	}
+	
+	function resume(selector){
+		$(selector).marquee('resume');
+	}
+	//-->
+	</script>
+</head>
+
+<body>
+
+<h1>
+	今天你就要嫁给我啦：）
+</h1>
+
+<div class="examples">
+
+<ul id="marquee1" class="marquee">
+	<li>嫁给我好吗？</li>
+</ul>
+
+<ul id="marquee2" class="marquee">
+	<li>我爱你，请你嫁给我</li>
+</ul>
+
+<ul id="marquee3" class="marquee">
+	<li>爱你一生一世!</li>
+</ul>
+<p>
+</p>
+
+
+<ul id="marquee4" class="marquee">
+	<li>欢迎老婆回家～～～</li>
+</ul>
+
+<ul id="marquee5" class="marquee">
+	<li>给你唱首歌，爱你一万年！</li>
+</ul>
+
+<div id="marquee-author" class="marquee-author"></div>
+<ul id="marquee6" class="marquee">
+	<li>让我用一生时间来照顾你！</li>
+</ul>
+
+</div>
+
+</body>
+</html>
