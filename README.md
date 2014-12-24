@@ -7,6 +7,10 @@
 ## 一些项目
 * c/c++
 
+  * [web-tunnel](https://github.com/jannson/web-tunnel)
+  Lan tunnel. 
+  * [asuswrt for xunlei router](https://github.com/jannson/asuswrt-merlin)
+  shadowsocks+chinadns+geoip+web-tunnel+webcam+... for XunLei Router.
   * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
   一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～[在线测试](http://jannson.github.io/vxworks)
   * [vxworks on jsmips](http://jannson.github.io/vxworks)
