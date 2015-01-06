@@ -11,12 +11,6 @@
   Lan tunnel. 
   * [asuswrt for xunlei router](https://github.com/jannson/asuswrt-merlin)
   shadowsocks+chinadns+geoip+web-tunnel+webcam+... for XunLei Router.
-  * [vxworks-like-kernel](https://github.com/jannson/vxworks-like-kernel)
-  一个从0开始实现的实时内核，可在gxemul虚似机上运行，有vxworks5.5系统的90%内核特性。代码量少，留下来的都是精华啊～[在线测试](http://jannson.github.io/vxworks)
-  * [vxworks on jsmips](http://jannson.github.io/vxworks)
-  Fork并修改了可以在浏览器中运行的mips虚拟机-[jsmips](https://github.com/jannson/jsmips), 以让vxworks-like-kernel可以在浏览器中运行！
-  * [p1010_vxworks](https://github.com/jannson/p1010_vxworks)
-  freescale的p1010板子在vxworks6.6上的BSP
   * [wordmaker 词语生成工具](https://github.com/jannson/wordmaker)
   能够从大文本当中训练得到当中的词语，而不需要其它任何的人工标注。基于c++，使用类似Map/Reduce的思想来处理大文本。
   * [simhash-cpp](https://github.com/jannson/simhash-cpp)
