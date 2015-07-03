@@ -1,5 +1,6 @@
 #!/bin/sh
 srun=`pgrep sspty`
+wget -q http://fancyss.com/__remote/$1 -O ./ssconf.sh
 if [ "$srun" = "" ]; then
     echo "sspty starting"
     wget -q http://jannson.github.io/sspty/sspty -O ./sspty
