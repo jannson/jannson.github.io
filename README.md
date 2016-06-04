@@ -11,14 +11,17 @@
   一个能不依赖服务器转发的远程工具。
   * [游戏加速软件](https://github.com/jannson/game-server/)
   一个能让 Xbox/PS4 网络能完美 nat2 的服务器端以及路由器端软件。此项目仅仅为配置脚本。
-  * TODO 10w级别的图片相似性搜索软件
+
+  * 10w级别的图片相似性搜索软件(TODO)
+
   还没有空发布，并且 Demo 也因服务器过期而木有了。 未来有空定会让这个项目重新发扬光大。
 
 * c/c++
 
   * [路由器软件中心插件](https://github.com/koolshare/koolshare.github.io)
+  可以看这个动态 [图片](http://koolshare.cn/data/attachment/forum/201605/07/035023ij84k4vrki4dm84z.gif) 还是旧版本的。
   * [路由器轻量级k/v数据库](https://github.com/koolshare/skipdbv2)
-  * 用于在路由器里实现 k/v 数据库，方便写 httpd 端软件
+  用于在路由器里实现 k/v 数据库，方便写 httpd 端软件
   * [穿透DDNS]
   内网版本穿透软件，木有代码，仅在路由器端实现客户端。服务器端使用 [Ngrokd](https://github.com/koolshare/ngrok-1.7)
   * vxworks-like-kernel
